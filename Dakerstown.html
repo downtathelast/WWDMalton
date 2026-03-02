@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dakerstown</title>
+  <link rel="stylesheet" type="text/css" href="map.css"/>
+  <script type="text/javascript" src="map.js"></script>
+</head>
+<body onload="initialise()">
+
+  <!-- Logo linking back to main map -->
+  <a href="index.html"><img id="logo" src="dss232.png" alt="DSS Logo"/></a>
+
+  <h1>The Malton Suburb of Dakerstown</h1>
+  <div class="burblinks">~ <a href="https://wiki.wwdead.com/wiki/Dakerstown">wiki</a> ~</div>
+
+  <!-- Complete Map Table -->
+  <table class="map-container">
+    <tbody>
+      <tr>
+        <td></td>
+        <td>
+          <table class="map">
+            <tbody>
+<tr>
+<td id="x0y0" class="loc wbt nbt"><div class="loc opns"><div class="p">0,0</div><div class="n">Bird Boulevard</div></div></td>
+<td id="x1y0" class="loc nbt"><div class="loc pdep"><div class="p">1,0</div><div class="n">Palprey Road Police Department</div></div></td>
+<td id="x2y0" class="loc nbt"><div class="loc chur"><div class="p">2,0</div><div class="n">St. Danilo's Church</div></div></td>
+<td id="x3y0" class="loc nbt"><div class="loc ceme"><div class="p">3,0</div><div class="n">a cemetery</div></div></td>
+<td id="x4y0" class="loc nbt"><div class="loc cprk"><div class="p">4,0</div><div class="n">a carpark</div></div></td>
+<td id="x5y0" class="loc nbt"><div class="loc libr"><div class="p">5,0</div><div class="n">Hewett Library</div></div></td>
+<td id="x6y0" class="loc nbt"><div class="loc opns"><div class="p">6,0</div><div class="n">Geldart Square</div></div></td>
+<td id="x7y0" class="loc nbt"><div class="loc rsta"><div class="p">7,0</div><div class="n">Hardwick Row Railway Station</div></div></td>
+<td id="x8y0" class="loc nbt"><div class="loc arms"><div class="p">8,0</div><div class="n">the Bullimore Arms</div></div></td>
+<td id="x9y0" class="loc ebb nbt"><div class="loc libr"><div class="p">9,0</div><div class="n">Bourdillon Library</div></div></td>
+</tr>
+<tr>
+<td id="x0y1" class="loc wbt"><div class="loc bldg"><div class="p">0,1</div><div class="n">the Norgan Building</div></div></td>
+<td id="x1y1" class="loc"><div class="loc opns"><div class="p">1,1</div><div class="n">Patridge Grove</div></div></td>
+<td id="x2y1" class="loc club"><div class="loc club"><div class="p">2,1</div><div class="n">Club Ogburn</div></div></td>
+<td id="x3y1" class="loc opns"><div class="loc opns"><div class="p">3,1</div><div class="n">Gatley Drive</div></div></td>
+<td id="x4y1" class="loc opns"><div class="loc opns"><div class="p">4,1</div><div class="n">Seamour Crescent</div></div></td>
+<td id="x5y1" class="loc opns"><div class="loc opns"><div class="p">5,1</div><div class="n">Merivale Crescent</div></div></td>
+<td id="x6y1" class="loc hosp"><div class="loc hosp"><div class="p">6,1</div><div class="n">St. Ansgar's Hospital</div></div></td>
+<td id="x7y1" class="loc ware"><div class="loc ware"><div class="p">7,1</div><div class="n">a warehouse</div></div></td>
+<td id="x8y1" class="loc ware"><div class="loc ware"><div class="p">8,1</div><div class="n">a warehouse</div></div></td>
+<td id="x9y1" class="loc ebb"><div class="loc auto"><div class="p">9,1</div><div class="n">Cuthbert Auto Repair</div></div></td>
+</tr>
+<tr>
+<td id="x0y2" class="loc wbt"><div class="loc auto"><div class="p">0,2</div><div class="n">Sinkins Auto Repair</div></div></td>
+<td id="x1y2" class="loc"><div class="loc opns"><div class="p">1,2</div><div class="n">Scorse Plaza</div></div></td>
+<td id="x2y2" class="loc opns"><div class="loc opns"><div class="p">2,2</div><div class="n">Voules Walk</div></div></td>
+<td id="x3y2" class="loc scho"><div class="loc scho"><div class="p">3,2</div><div class="n">Pavey Place School</div></div></td>
+<td id="x4y2" class="loc libr"><div class="loc libr"><div class="p">4,2</div><div class="n">Cranton Library</div></div></td>
+<td id="x5y2" class="loc opns"><div class="loc opns"><div class="p">5,2</div><div class="n">Glastonbury Alley</div></div></td>
+<td id="x6y2" class="loc opns"><div class="loc opns"><div class="p">6,2</div><div class="n">Ditcher Lane</div></div></td>
+<td id="x7y2" class="loc towr"><div class="loc towr"><div class="p">7,2</div><div class="n">Heward Towers</div></div></td>
+<td id="x8y2" class="loc opns"><div class="loc opns"><div class="p">8,2</div><div class="n">Bedford Street</div></div></td>
+<td id="x9y2" class="loc ebb"><div class="loc arms"><div class="p">9,2</div><div class="n">the Boucher Arms</div></div></td>
+</tr>
+<tr>
+<td id="x0y3" class="loc wbt"><div class="loc bldg"><div class="p">0,3</div><div class="n">the Emberson Building</div></div></td>
+<td id="x1y3" class="loc bldg"><div class="loc bldg"><div class="p">1,3</div><div class="n">the Dibbin Building</div></div></td>
+<td id="x2y3" class="loc wast"><div class="loc wast"><div class="p">2,3</div><div class="n">wasteland</div></div></td>
+<td id="x3y3" class="loc fire"><div class="loc fire"><div class="p">3,3</div><div class="n">Dovey Boulevard Fire Station</div></div></td>
+<td id="x4y3" class="loc ware"><div class="loc ware"><div class="p">4,3</div><div class="n">a warehouse</div></div></td>
+<td id="x5y3" class="loc opns"><div class="loc opns"><div class="p">5,3</div><div class="n">Owens Walk</div></div></td>
+<td id="x6y3" class="loc bank"><div class="loc bank"><div class="p">6,3</div><div class="n">Tomkins Bank</div></div></td>
+<td id="x7y3" class="loc cine"><div class="loc cine"><div class="p">7,3</div><div class="n">McDougall Cinema</div></div></td>
+<td id="x8y3" class="loc bldg"><div class="loc bldg"><div class="p">8,3</div><div class="n">the Yelling Building</div></div></td>
+<td id="x9y3" class="loc ebb"><div class="loc arms"><div class="p">9,3</div><div class="n">the Hodgkins Arms</div></div></td>
+</tr>
+</tr><tr>
+<td id="x0y4" class="loc wbt"><div class="loc club"><div class="p">0,4</div><div class="n">Club Magee</div></div></td>
+<td id="x1y4" class="loc"><div class="loc opns"><div class="p">1,4</div><div class="n">Wilmott Row</div></div></td>
+<td id="x2y4" class="loc"><div class="loc opns"><div class="p">2,4</div><div class="n">Turpin Crescent</div></div></td>
+<td id="x3y4" class="loc"><div class="loc arms"><div class="p">3,4</div><div class="n">the Tobit Arms</div></div></td>
+<td id="x4y4" class="loc"><div class="loc hotl"><div class="p">4,4</div><div class="n">the Doyne Hotel</div></div></td>
+<td id="x5y4" class="loc"><div class="loc junk"><div class="p">5,4</div><div class="n">a junkyard</div></div></td>
+<td id="x6y4" class="loc"><div class="loc bank"><div class="p">6,4</div><div class="n">Bissley Bank</div></div></td>
+<td id="x7y4" class="loc"><div class="loc opns"><div class="p">7,4</div><div class="n">Turnock Place</div></div></td>
+<td id="x8y4" class="loc"><div class="loc libr"><div class="p">8,4</div><div class="n">Hopes Library</div></div></td>
+<td id="x9y4" class="loc ebb"><div class="loc opns"><div class="p">9,4</div><div class="n">Alderson Street</div></div></td>
+</tr><tr>
+<td id="x0y5" class="loc wbt"><div class="loc pdep"><div class="p">0,5</div><div class="n">Wale Walk Police Department</div></div></td>
+<td id="x1y5" class="loc"><div class="loc opns"><div class="p">1,5</div><div class="n">Buckinham Lane</div></div></td>
+<td id="x2y5" class="loc"><div class="loc ware"><div class="p">2,5</div><div class="n">a warehouse</div></div></td>
+<td id="x3y5" class="loc"><div class="loc hosp"><div class="p">3,5</div><div class="n">St. Bartholomew's Hospital</div></div></td>
+<td id="x4y5" class="loc"><div class="loc bldg"><div class="p">4,5</div><div class="n">the Buttle Building</div></div></td>
+<td id="x5y5" class="loc"><div class="loc opns"><div class="p">5,5</div><div class="n">Montacute Place</div></div></td>
+<td id="x6y5" class="loc"><div class="loc musm"><div class="p">6,5</div><div class="n">the Oakes Museum</div></div></td>
+<td id="x7y5" class="loc"><div class="loc opns"><div class="p">7,5</div><div class="n">Andow Square</div></div></td>
+<td id="x8y5" class="loc"><div class="loc wast"><div class="p">8,5</div><div class="n">wasteland</div></div></td>
+<td id="x9y5" class="loc ebb"><div class="loc rsta"><div class="p">9,5</div><div class="n">Imber Road Railway Station</div></div></td>
+</tr><tr>
+<td id="x0y6" class="loc wbt"><div class="loc ware"><div class="p">0,6</div><div class="n">a warehouse</div></div></td>
+<td id="x1y6" class="loc"><div class="loc hotl"><div class="p">1,6</div><div class="n">the Gristwood Hotel</div></div></td>
+<td id="x2y6" class="loc"><div class="loc pdep"><div class="p">2,6</div><div class="n">Swearse Lane Police Department</div></div></td>
+<td id="x3y6" class="loc"><div class="loc fact"><div class="p">3,6</div><div class="n">a factory</div></div></td>
+<td id="x4y6" class="loc"><div class="loc opns"><div class="p">4,6</div><div class="n">Owsley Alley</div></div></td>
+<td id="x5y6" class="loc"><div class="loc opns"><div class="p">5,6</div><div class="n">Petvin Place</div></div></td>
+<td id="x6y6" class="loc"><div class="loc ware"><div class="p">6,6</div><div class="n">a warehouse</div></div></td>
+<td id="x7y6" class="loc"><div class="loc cprk"><div class="p">7,6</div><div class="n">a carpark</div></div></td>
+<td id="x8y6" class="loc"><div class="loc opns"><div class="p">8,6</div><div class="n">Woolsett Avenue</div></div></td>
+<td id="x9y6" class="loc ebb"><div class="loc opns"><div class="p">9,6</div><div class="n">Rodges Grove</div></div></td>
+</tr><tr>
+<td id="x0y7" class="loc wbt"><div class="loc opns"><div class="p">0,7</div><div class="n">Hogue Street</div></div></td>
+<td id="x1y7" class="loc"><div class="loc junk"><div class="p">1,7</div><div class="n">a junkyard</div></div></td>
+<td id="x2y7" class="loc"><div class="loc fire"><div class="p">2,7</div><div class="n">Lomas Boulevard Fire Station</div></div></td>
+<td id="x3y7" class="loc"><div class="loc opns"><div class="p">3,7</div><div class="n">Woodborne Crescent</div></div></td>
+<td id="x4y7" class="loc"><div class="loc wast"><div class="p">4,7</div><div class="n">wasteland</div></div></td>
+<td id="x5y7" class="loc"><div class="loc opns"><div class="p">5,7</div><div class="n">Tossell Walk</div></div></td>
+<td id="x6y7" class="loc"><div class="loc junk"><div class="p">6,7</div><div class="n">a junkyard</div></div></td>
+<td id="x7y7" class="loc"><div class="loc libr"><div class="p">7,7</div><div class="n">Tolly Library</div></div></td>
+<td id="x8y7" class="loc"><div class="loc opns"><div class="p">8,7</div><div class="n">Ledger Avenue</div></div></td>
+<td id="x9y7" class="loc ebb"><div class="loc bldg"><div class="p">9,7</div><div class="n">the Blackman Building</div></div></td>
+</tr><tr>
+<td id="x0y8" class="loc wbt"><div class="loc chur"><div class="p">0,8</div><div class="n">St. Matthias's Church</div></div></td>
+<td id="x1y8" class="loc"><div class="loc auto"><div class="p">1,8</div><div class="n">Jeffries Auto Repair</div></div></td>
+<td id="x2y8" class="loc"><div class="loc park"><div class="p">2,8</div><div class="n">Britton Park</div></div></td>
+<td id="x3y8" class="loc"><div class="loc wast"><div class="p">3,8</div><div class="n">wasteland</div></div></td>
+<td id="x4y8" class="loc"><div class="loc bldg"><div class="p">4,8</div><div class="n">the Beal Building</div></div></td>
+<td id="x5y8" class="loc"><div class="loc hotl"><div class="p">5,8</div><div class="n">the Chitty Hotel</div></div></td>
+<td id="x6y8" class="loc"><div class="loc park"><div class="p">6,8</div><div class="n">Leeworthy Park</div></div></td>
+<td id="x7y8" class="loc"><div class="loc ntbg"><div class="p">7,8</div><div class="n">the Pask Building</div></div></td>
+<td id="x8y8" class="loc"><div class="loc opns"><div class="p">8,8</div><div class="n">Calderwood Plaza</div></div></td>
+<td id="x9y8" class="loc ebb"><div class="loc opns"><div class="p">9,8</div><div class="n">Meleady Plaza</div></div></td>
+</tr><tr>
+<td id="x0y9" class="loc wbt sbb"><div class="loc pdep"><div class="p">0,9</div><div class="n">Stobbart Walk Police Department</div></div></td>
+<td id="x1y9" class="loc sbb"><div class="loc auto"><div class="p">1,9</div><div class="n">Freeth Auto Repair</div></div></td>
+<td id="x2y9" class="loc sbb"><div class="loc bldg"><div class="p">2,9</div><div class="n">the Crespin Building</div></div></td>
+<td id="x3y9" class="loc sbb"><div class="loc opns"><div class="p">3,9</div><div class="n">Tyack Row</div></div></td>
+<td id="x4y9" class="loc sbb"><div class="loc towr"><div class="p">4,9</div><div class="n">Chadwick Towers</div></div></td>
+<td id="x5y9" class="loc sbb"><div class="loc opns"><div class="p">5,9</div><div class="n">Atkinson Square</div></div></td>
+<td id="x6y9" class="loc sbb"><div class="loc opns"><div class="p">6,9</div><div class="n">Hazeldine Square</div></div></td>
+<td id="x7y9" class="loc sbb"><div class="loc monu"><div class="p">7,9</div><div class="n">the Troakes Monument</div></div></td>
+<td id="x8y9" class="loc sbb"><div class="loc rsta"><div class="p">8,9</div><div class="n">Snook Alley Railway Station</div></div></td>
+<td id="x9y9" class="loc ebb sbb"><div class="loc opns"><div class="p">9,9</div><div class="n">Whitesides Row</div></div></td>
+</tr>
+            </tbody>
+          </table>
+        </td>
+        <td><a href="1-2"><img src="e.png" alt="E"/></a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="1-11"><img src="s.png" alt="S"/></a></td>
+        <td><a href="1-2-11-12"><img src="se.png" alt="SE"/></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
