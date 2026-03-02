@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Map of Malton</title>
+  <link rel="stylesheet" href="map.css"/>
+  <script src="map.js"></script>
+</head>
+<body onload="initialise()">
+
+  <a href="./"><img id="logo" src="dss232.png" alt="DSS Logo"/></a>
+
+  <div id="search">
+    <form name="search" action="location/find" method="get">
+      <div>
+        <input type="text" name="q" maxlength="255" size="18"/><br/>
+        <input type="submit" value="Go"/>
+      </div>
+    </form>
+  </div>
+
+  <h1>Map of Malton</h1>
+  <div class="burblinks">~ <a href="https://wiki.urbandead.com/index.php/Suburb">wiki</a> ~</div>
+
+  <table class="citymap">
+    <tbody>
+      <tr>
+        <td><a href="Dakerstown">Dakerstown</a></td>
+        <td><a href="Jensentown">Jensentown</a></td>
+        <td><a href="Quarlesbank">Quarlesbank</a></td>
+        <td><a href="West_Boundwood">West Boundwood</a></td>
+        <td><a href="East_Boundwood">East Boundwood</a></td>
+        <td><a href="Lamport_Hills">Lamport Hills</a></td>
+        <td><a href="Chancelwood">Chancelwood</a></td>
+        <td><a href="Earletown">Earletown</a></td>
+        <td><a href="Rhodenbank">Rhodenbank</a></td>
+        <td><a href="Dulston">Dulston</a></td>
+      </tr>
+      <tr>
+        <td><a href="Roywood">Roywood</a></td>
+        <td><a href="Judgewood">Judgewood</a></td>
+        <td><a href="Gatcombeton">Gatcombeton</a></td>
+        <td><a href="Shuttlebank">Shuttlebank</a></td>
+        <td><a href="Yagoton">Yagoton</a></td>
+        <td><a href="Millen_Hills">Millen Hills</a></td>
+        <td><a href="Raines_Hills">Raines Hills</a></td>
+        <td><a href="Pashenton">Pashenton</a></td>
+        <td><a href="Rolt_Heights">Rolt Heights</a></td>
+        <td><a href="Pescodside">Pescodside</a></td>
+      </tr>
+    <tr>
+<td><a href="Peddlesden_Village">Peddlesden Village</a></td>
+<td><a href="Chudleyton">Chudleyton</a></td>
+<td><a href="Darvall_Heights">Darvall Heights</a></td>
+<td><a href="Eastonwood">Eastonwood</a></td>
+<td><a href="Brooke_Hills">Brooke Hills</a></td>
+<td><a href="Shearbank">Shearbank</a></td>
+<td><a href="Huntley_Heights">Huntley Heights</a></td>
+<td><a href="Santlerville">Santlerville</a></td>
+<td><a href="Gibsonton">Gibsonton</a></td>
+<td><a href="Dunningwood">Dunningwood</a></td>
+</tr>
+<tr>
+<td><a href="Dunell_Hills">Dunell Hills</a></td>
+<td><a href="West_Becktown">West Becktown</a></td>
+<td><a href="East_Becktown">East Becktown</a></td>
+<td><a href="Richmond_Hills">Richmond Hills</a></td>
+<td><a href="Ketchelbank">Ketchelbank</a></td>
+<td><a href="Roachtown">Roachtown</a></td>
+<td><a href="Randallbank">Randallbank</a></td>
+<td><a href="Heytown">Heytown</a></td>
+<td><a href="Spracklingbank">Spracklingbank</a></td>
+<td><a href="Paynterton">Paynterton</a></td>
+</tr>
+<tr>
+<td><a href="Owsleybank">Owsleybank</a></td>
+<td><a href="Molebank">Molebank</a></td>
+<td><a href="Lukinswood">Lukinswood</a></td>
+<td><a href="Havercroft">Havercroft</a></td>
+<td><a href="Barrville">Barrville</a></td>
+<td><a href="Ridleybank">Ridleybank</a></td>
+<td><a href="Pimbank">Pimbank</a></td>
+<td><a href="Peppardville">Peppardville</a></td>
+<td><a href="Pitneybank">Pitneybank</a></td>
+<td><a href="Starlingtown">Starlingtown</a></td>
+</tr>
+<tr>
+<td><a href="Grigg_Heights">Grigg Heights</a></td>
+<td><a href="Reganbank">Reganbank</a></td>
+<td><a href="Lerwill_Heights">Lerwill Heights</a></td>
+<td><a href="Shore_Hills">Shore Hills</a></td>
+<td><a href="Galbraith_Hills">Galbraith Hills</a></td>
+<td><a href="Stanbury_Village">Stanbury Village</a></td>
+<td><a href="Roftwood">Roftwood</a></td>
+<td><a href="Edgecombe">Edgecombe</a></td>
+<td><a href="Pegton">Pegton</a></td>
+<td><a href="Dentonside">Dentonside</a></td>
+</tr>
+<tr>
+<td><a href="Crooketon">Crooketon</a></td>
+<td><a href="Mornington">Mornington</a></td>
+<td><a href="North_Blythville">North Blythville</a></td>
+<td><a href="Brooksville">Brooksville</a></td>
+<td><a href="Mockridge_Heights">Mockridge Heights</a></td>
+<td><a href="Shackleville">Shackleville</a></td>
+<td><a href="Tollyton">Tollyton</a></td>
+<td><a href="Crowbank">Crowbank</a></td>
+<td><a href="Vinetown">Vinetown</a></td>
+<td><a href="Houldenbank">Houldenbank</a></td>
+</tr>
+<tr>
+<td><a href="Nixbank">Nixbank</a></td>
+<td><a href="Wykewood">Wykewood</a></td>
+<td><a href="South_Blythville">South Blythville</a></td>
+<td><a href="Greentown">Greentown</a></td>
+<td><a href="Tapton">Tapton</a></td>
+<td><a href="Kempsterbank">Kempsterbank</a></td>
+<td><a href="Wray_Heights">Wray Heights</a></td>
+<td><a href="Gulsonside">Gulsonside</a></td>
+<td><a href="Osmondville">Osmondville</a></td>
+<td><a href="Penny_Heights">Penny Heights</a></td>
+</tr>
+<tr>
+<td><a href="Foulkes_Village">Foulkes Village</a></td>
+<td><a href="Ruddlebank">Ruddlebank</a></td>
+<td><a href="Lockettside">Lockettside</a></td>
+<td><a href="Dartside">Dartside</a></td>
+<td><a href="Kinch_Heights">Kinch Heights</a></td>
+<td><a href="West_Grayside">West Grayside</a></td>
+<td><a href="East_Grayside">East Grayside</a></td>
+<td><a href="Scarletwood">Scarletwood</a></td>
+<td><a href="Pennville">Pennville</a></td>
+<td><a href="Fryerbank">Fryerbank</a></td>
+</tr>
+<tr>
+<td><a href="New_Arkham">New Arkham</a></td>
+<td><a href="Old_Arkham">Old Arkham</a></td>
+<td><a href="Spicer_Hills">Spicer Hills</a></td>
+<td><a href="Williamsville">Williamsville</a></td>
+<td><a href="Buttonville">Buttonville</a></td>
+<td><a href="Wyke_Hills">Wyke Hills</a></td>
+<td><a href="Hollomstown">Hollomstown</a></td>
+<td><a href="Danversbank">Danversbank</a></td>
+<td><a href="Whittenside">Whittenside</a></td>
+<td><a href="Miltown">Miltown</a></td>
+</tr>
+    </tbody>
+  </table>
+
+  <p style="text-align: center">
+    Select a suburb above, or see the full <a href="city">City Map</a>.
+  </p>
+
+  <p style="text-align: center; font-size: small">
+    (the full map is big; it may slow down or crash your browser)
+  </p>
+
+  <p class="ft">
+    Urban Dead is copyright &copy; 2005-2012 Kevan Davis. Consider the rest of this page to be in the public domain. This website has no affiliation to Urban Dead or Mr. Davis, other than we liking his game too bloody much.
+  </p>
+
+</body>
+</html>
