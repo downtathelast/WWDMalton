@@ -1,0 +1,266 @@
+body {
+    font-family: trebuchet ms, verdana, sans-serif;
+    background-color: #232;
+    color: #bcb;
+}
+
+img { border: none }
+a { color:#f99; text-decoration:none; }
+a:visited { color:#c99 }
+
+h1 {
+    font-size: 18pt;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 6pt;
+}
+
+.burblinks {
+    text-align: center;
+    font-size: 10pt;
+    font-style: italic;
+    margin: 9pt;
+}
+
+img#logo {
+    position: absolute;
+    top: 8pt;
+    left: 8pt;
+}
+
+div#search {
+    position: absolute;
+    top: 8pt;
+    right: 8pt;
+    text-align: right;
+}
+div#search input { font-size: 8pt; margin: 1pt }
+
+table.map-container {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.map-container td { text-align: center }
+
+table.citymap {
+    table-layout: fixed;
+    font-size: 10pt;
+    border-collapse: collapse;
+    border: solid thick black;
+    background-color: #666;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.citymap td {
+    padding: 0;
+    border: solid thin black;
+    text-align: center;
+    vertical-align: middle;
+    width: 64pt;
+    height: 50pt;
+}
+
+table.map {
+    font-size: 8pt;
+    line-height: 9pt;
+    border-collapse: collapse;
+    border: solid thin black;
+    background: #eee url('/web/20160804071553im_/http://map.dssrzs.org/streets.png') repeat;
+}
+
+table.map td {
+    padding: 0;
+    border: dotted thin black;
+}
+
+table.map td.loc { cursor: pointer }
+
+/* suburb borders */
+table.map td.wbb { border-left: solid medium black }
+table.map td.ebb { border-right: solid medium black }
+table.map td.nbb { border-top: solid medium black }
+table.map td.sbb { border-bottom: solid medium black }
+
+/* town borders */
+table.map td.wbt { border-left: solid thick black }
+table.map td.ebt { border-right: solid thick black }
+table.map td.nbt { border-top: solid thick black }
+table.map td.sbt { border-bottom: solid thick black }
+
+/* inside borders */
+table.map td.wbi { border-left: dotted thin gray }
+table.map td.ebi { border-right: dotted thin gray }
+table.map td.nbi { border-top: dotted thin gray }
+table.map td.sbi { border-bottom: dotted thin gray }
+
+/* wall borders */
+table.map td.wbw { border-left: solid medium black }
+table.map td.ebw { border-right: solid medium black }
+table.map td.nbw { border-top: solid medium black }
+table.map td.sbw { border-bottom: solid medium black }
+
+table.map div.loc {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    border-style: solid;
+    border-width: 3pt;
+    border-color: #666;
+    padding: 2pt;
+    width: 54pt;
+    height: 54pt;
+}
+
+table.map div.p {
+    border: hidden;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2pt;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: black;
+    font-size: 7pt;
+    text-align: left;
+}
+
+table.map div.n {
+    margin: auto;
+    padding: 1pt;
+    width: auto;
+    height: auto;
+    background-color: #ddd;
+    color: #c00;
+    border: outset 1pt #f6f6f6;
+    font-size: 8pt;
+    text-align: center;
+}
+
+table.map div.opns {
+    background-color: transparent;
+    border: none;
+    margin: 3pt;
+}
+
+table.map div.arms { background-color: #876 }
+table.map div.auto { background-color: #ccc }
+table.map div.bank { background-color: #ded }
+table.map div.bldg { background-color: #aad }
+table.map div.cath { background-color: #fff; border-color: #fff }
+table.map div.ceme { background-color: #9c9 }
+table.map div.chur { background-color: #fff }
+table.map div.cine { background-color: #ddd }
+table.map div.club { background-color: #c9c; border-color: #c9c }
+table.map div.cprk { background-color: #666; border-color: #666 }
+table.map div.fact { background-color: #aaa }
+table.map div.fire { background-color: #fdd }
+table.map div.hosp { background-color: #f99 }
+table.map div.hotl { background-color: #c94 }
+table.map div.junk { background-color: #765; border-color: #765 }
+table.map div.libr { background-color: #eee; border-color: #9c9 }
+table.map div.mall { background-color: #eef; border-color: #eef }
+table.map div.mnsn { background-color: #eee }
+table.map div.motl { background-color: #c94 }
+table.map div.monu { background-color: #666; border-color: #666 }
+table.map div.musm { background-color: #898; border-color: #9c9 }
+table.map div.ntbg { background-color: #aad; border-color: #d00 }
+table.map div.park { background-color: #9c9; border-color: #ddd }
+table.map div.pdep { background-color: #ddf }
+table.map div.psta { background-color: #aaa }
+table.map div.rsta { background-color: #888 }
+table.map div.scho { background-color: #899 }
+table.map div.stad { background-color: #9c9; border-color: #765 }
+table.map div.towr { background-color: #eee; border-color: #eee }
+table.map div.ware { background-color: #987; border-color: #987 }
+table.map div.wast { background-color: #765; border-color: #765 }
+
+table.map div.finf { background-color: #f99; border-color: #987 }
+table.map div.fsto { background-color: #999; border-color: #987 }
+table.map div.fbar { background-color: #876; border-color: #987 }
+table.map div.famy { background-color: #888; border-color: #987 }
+table.map div.fgat { background-color: #999; border-color: #666 }
+table.map div.fexy { background-color: #987; border-color: #987 }
+table.map div.ftgr { background-color: #797; border-color: #987 }
+table.map div.fvdp { background-color: #373; border-color: #987 }
+
+table.map div.zoox { background-color: #965; border-color: #965 }
+table.map div.zooe { background-color: #965; border-color: #ddd; border-style: dotted; border-width: 2pt; padding: 3pt }
+
+table.map div.high { background-color: #ff0; border-color: #bb0 }
+table.map div.high.ntbg { border-color: #d00 }
+
+p.ft {
+    font-size: 8pt;
+    text-align: center;
+    width: 41em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    clear: both;
+}
+
+h2 { font-size: 16pt; margin-top: 2em }
+table.loclist { font-size: 10pt; margin-left: auto; margin-right: auto }
+table.loclist td { vertical-align: top; padding-left: 1em; padding-right: 2em }
+
+.modes {
+    text-align: center;
+    font-size: 9pt;
+    font-weight: bold;
+    margin: 9pt 0;
+}
+
+.modes a {
+    color: #bcb;
+    background-color: #343;
+    border: outset thin #454;
+    padding: 3pt;
+    margin: 0 3pt;
+    display: inline-block;
+    min-width: 12em;
+}
+
+.modes a.pushed {
+    color: #ff0;
+    background-color: #121;
+    border: inset thin #454;
+}
+
+.select-button {
+    position: absolute;
+    top: 40pt;
+    left: 40pt;
+    width: 14pt;
+    height: 14pt;
+    font-size: 16pt;
+    line-height: 12pt;
+    font-weight: bold;
+    background-color: #ddd;
+    color: #c00;
+    border: outset 1pt #f6f6f6;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*
+     FILE ARCHIVED ON 07:15:53 Aug 04, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:32:40 Mar 02, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.866
+  exclusion.robots: 0.036
+  exclusion.robots.policy: 0.017
+  esindex: 0.019
+  cdx.remote: 49.278
+  LoadShardBlock: 340.53 (3)
+  PetaboxLoader3.resolve: 280.544 (4)
+  PetaboxLoader3.datanode: 301.881 (4)
+  load_resource: 716.725
+*/
